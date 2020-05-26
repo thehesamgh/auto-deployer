@@ -1,10 +1,12 @@
 # auto-deployer
 Auto deploy files to remove hosts and run scripts
 
-How to run:
+#How to run:
 
-Sample command and it's output:
+#Sample command and it's output:
+```
 python3 auto-deployer.py --hosts hosts.yml --command "rm test.sh" --command date --command "touch test.sh" --command "ls -lh test.sh" --command "chmod +x test.sh" --command "ls -lh test.sh"
+```
 ERROR: timed out connecting to host 10.0.0.1 through SSH
 ERROR: timed out connecting to host 10.0.0.2 through SSH
 command "rm test.sh" ran on test3
