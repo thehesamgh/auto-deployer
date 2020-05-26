@@ -1,5 +1,5 @@
 # auto-deployer
-Auto deploy is a usefull automation tool that is able to send files using SFTP and runs commands on multiple remote machines using SSH simultaneously.
+Auto deploy is a usefull automation tool that is able to send files using SFTP and run commands on multiple remote machines using SSH simultaneously.
 You can simple add hosts info in hosts.yml config file and then run this program using specified flags that I mention them in the following.
 # How to run:
 ```
