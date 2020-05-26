@@ -1,5 +1,5 @@
 # auto-deployer
-Auto deploy files to remove hosts and run scripts
+Auto deploy files to remote hosts and run scripts
 
 # How to run:
 
