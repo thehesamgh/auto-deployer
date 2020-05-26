@@ -39,7 +39,7 @@ class HOST:
         except:
             raise Exception("Invalid argument for __download_file_from_remote_machine function")
 
-        self.ssh.upload_to_remote_machine(remote_path,local_path)
+        self.ssh.download_from_remote_machine(remote_path,local_path)
 
 
     def run(self,func_name,*args):
