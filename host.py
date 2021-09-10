@@ -1,4 +1,6 @@
 import socket
+
+
 class HOST:
     
     def __init__(self,name,ip,username,password):
@@ -129,4 +131,3 @@ class SSH:
            raise Exception ("ERROR: {}".format(error))
 
         return output
-
