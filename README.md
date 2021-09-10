@@ -2,15 +2,26 @@
 Auto deploy is a usefull automation tool that is able to send files using SFTP and run commands on multiple remote machines using SSH simultaneously.
 You can simply add hosts info in hosts.yml config file and then run this program using specified flags that I mention them in the following.
 # How to run:
+```bash
+python3 auto-deployer.py \\
+--hosts <path_to_hosts.yml> \\
+--command <first_remote_command> \\ 
+--command <second_remote_command> ...
 ```
-python3 auto-deployer.py --hosts <path_to_hosts.yml> --command <first_remote_command> --command <second_remote_command> ...
-```
+
 # Sample command:
+```bash
+python3 auto-deployer.py --hosts hosts.yml \\
+--command "rm test.sh" \\
+--command date \\
+--command "touch test.sh" \\
+--command "ls -lh test.sh" \\
+--command "chmod +x test.sh" \\
+--command "ls -lh test.sh"
 ```
-python3 auto-deployer.py --hosts hosts.yml --command "rm test.sh" --command date --command "touch test.sh" --command "ls -lh test.sh" --command "chmod +x test.sh" --command "ls -lh test.sh"
-```
+
 # Sample output
-```
+```bash
 ERROR: timed out connecting to host 10.0.0.1 through SSH
 ERROR: timed out connecting to host 10.0.0.2 through SSH
 command "rm test.sh" ran on test3
