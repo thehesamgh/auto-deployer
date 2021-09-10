@@ -4,7 +4,11 @@ import socket
 class HOST:
     
     def __init__(self,name,ip,username,password):
-        self.name_to_func_mapping = {"command":self.__run_command_on_remote_machine,"upload":self.__upload_file_into_remote_machine,"download":self.__download_file_from_remote_machine}
+        self.name_to_func_mapping = {
+            "command":self.__run_command_on_remote_machine,
+            "upload":self.__upload_file_into_remote_machine,
+            "download":self.__download_file_from_remote_machine
+        }
         self.ssh = SSH(ip,username,password)
         self.name = name
 
