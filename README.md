@@ -1,6 +1,6 @@
 # auto-deployer
 Auto deploy is a usefull automation tool that is able to send files using SFTP and run commands on multiple remote machines using SSH simultaneously.
-You can simple add hosts info in hosts.yml config file and then run this program using specified flags that I mention them in the following.
+You can simply add hosts info in hosts.yml config file and then run this program using specified flags that I mention them in the following.
 # How to run:
 ```
 python3 auto-deployer.py --hosts <path_to_hosts.yml> --command <first_remote_command> --command <second_remote_command> ...
