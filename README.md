@@ -11,7 +11,8 @@ python3 auto-deployer.py \\
 
 # Sample command:
 ```bash
-python3 auto-deployer.py --hosts hosts.yml \\
+python3 auto-deployer.py \\
+--hosts hosts.yml \\
 --command "rm test.sh" \\
 --command date \\
 --command "touch test.sh" \\
